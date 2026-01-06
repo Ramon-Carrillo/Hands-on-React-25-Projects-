@@ -2,40 +2,32 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-const firstBook = {
-  author: 'Emma Greene',
-  title: 'How to Draw Everything',
-  img: './images/book-1.jpg',
-}
-const secondBook = {
-  author: 'Jack Haynes',
-  title: 'Learn a Lot While You Sit on the Pot',
-  img: './images/book-2.jpg',
-}
-const thirdBook = {
-  author: 'Mel Robbins',
-  title: 'The Let Them Theory',
-  img: './images/book-3.jpg',
-}
+const books = [
+  {
+    author: 'Emma Greene',
+    title: 'How to Draw Everything',
+    img: './images/book-1.jpg',
+    id: 1,
+  },
+  {
+    author: 'Jack Haynes',
+    title: 'Learn a Lot While You Sit on the Pot',
+    img: './images/book-2.jpg',
+    id: 2,
+  },
+  {
+    author: 'Mel Robbins',
+    title: 'The Let Them Theory',
+    img: './images/book-3.jpg',
+    id: 3,
+  },
+]
 function BookList() {
   return (
     <section className='booklist'>
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}
-      />
-
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        img={secondBook.img}
-      />
-      <Book
-        author={thirdBook.author}
-        title={thirdBook.title}
-        img={thirdBook.img}
-      />
+      {books.map((book) => {
+        return <Book key={book.id} {...book} />
+      })}
     </section>
   )
 }
