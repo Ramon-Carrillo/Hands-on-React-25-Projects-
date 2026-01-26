@@ -14,14 +14,13 @@
 // import Starter from './tutorial/03-conditional-rendering/starter/06-toggle-challenge'
 // import Starter from './tutorial/03-conditional-rendering/starter/07-user-challenge'
 // import Navbar from './tutorial/04-project-structure/starter/Navbar'
-
-import List from './tutorial/05-leverage-javascript/starter/List'
+// import List from './tutorial/05-leverage-javascript/starter/List'
+import Starter from './tutorial/06-forms/starter/01-controlled-inputs'
 
 function App() {
   return (
     <div className='container'>
-      <h2>Leverage Javascript</h2>
-      <List />
+      <Starter />
     </div>
   )
 }
