@@ -15,8 +15,15 @@
 // import Starter from './tutorial/03-conditional-rendering/starter/07-user-challenge'
 // import Navbar from './tutorial/04-project-structure/starter/Navbar'
 
+import List from './tutorial/05-leverage-javascript/starter/List'
+
 function App() {
-  return <div className='container'></div>
+  return (
+    <div className='container'>
+      <h2>Leverage Javascript</h2>
+      <List />
+    </div>
+  )
 }
 
 export default App
