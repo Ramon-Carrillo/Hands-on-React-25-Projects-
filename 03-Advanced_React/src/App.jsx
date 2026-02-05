@@ -23,8 +23,8 @@
 // import Starter from './tutorial/07-useRef/starter/01-useRef-basics'
 // import Starter from './tutorial/08-custom-hooks/starter/01-toggle'
 // import Starter from './tutorial/08-custom-hooks/starter/02-fetch-data'
-import Starter from './tutorial/09-context-api/starter/Navbar'
-
+// import Starter from './tutorial/09-context-api/starter/Navbar'
+import Starter from './tutorial/10-useReducer/starter/01-useReducer'
 function App() {
   return (
     <div className='container'>
